@@ -4,9 +4,11 @@
 
 * sbt 0.11.2
 
-## Mac OS X Install (with brew):
+### Mac OS X Install (with brew):
 
         brew install sbt
+
+## Start Using Example
 
 0. Clone this repository
 
