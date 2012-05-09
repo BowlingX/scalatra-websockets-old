@@ -1,0 +1,14 @@
+-@ var body:String
+!!! 5
+html(lang="de")
+    head
+        script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+        script(type="text/javascript" src="/static/js/jquery.atmosphere.js")
+    body
+        #wrap
+            #main.container
+                .row.baseContent
+                    .content
+                        != body
+        footer
+
