@@ -21,14 +21,10 @@
 	</servlet-mapping>
 	
 	<!-- Static Asset Serving Example -->
-	<!--
 	<servlet-mapping>
         <servlet-name>default</servlet-name>
-        <url-pattern>/img/*</url-pattern>
-        <url-pattern>/css/*</url-pattern>
-        <url-pattern>/js/*</url-pattern>
+        <url-pattern>/static/*</url-pattern>
     </servlet-mapping>
-	-->
 
     <servlet>
         <description>AtmosphereServlet</description>

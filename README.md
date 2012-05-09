@@ -1,4 +1,16 @@
-== Scalatra Websockets with Atmosphere and Apache Shiro ==
+# Scalatra Websockets with Atmosphere and Apache Shiro #
+
+## Requirements
+
+* sbt 0.11.2
+
+## Mac OS X Install (with brew):
+
+        brew install sbt
+
+0. Clone this repository
+
+        git clone git@github.com:BowlingX/scalatra-websockets.git
 
 1. Launch [SBT](http://code.google.com/p/simple-build-tool).
 
