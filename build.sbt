@@ -9,10 +9,10 @@ scalaVersion := "2.9.1"
 seq(webSettings :_*)
 
 libraryDependencies ++= Seq(
-    "commons-logging" % "commons-logging" % "1.1.1" % "provided",
-    "org.slf4j" % "log4j-over-slf4j" % "1.6.4",
-    "ch.qos.logback" % "logback-classic" % "1.0.2",
-    "org.specs2" %% "specs2" % "1.8.2" % "test",
+   "commons-logging" % "commons-logging" % "1.1.1" % "provided",
+   "org.slf4j" % "log4j-over-slf4j" % "1.6.4",
+   "ch.qos.logback" % "logback-classic" % "1.0.2",
+   "org.specs2" %% "specs2" % "1.8.2" % "test",
    "org.scala-tools.testing" %% "scalacheck" % "1.9" % "test",
    "junit" % "junit" % "4.10" % "test",
    "org.fusesource.scalamd" % "scalamd" % "1.5",
@@ -21,22 +21,21 @@ libraryDependencies ++= Seq(
    "org.scalatra" % "scalatra-scalate" % "2.1.0-SNAPSHOT" changing(),
    "org.scalatra" %% "scalatra-akka2" % "2.1.0-SNAPSHOT" changing(),
    "org.scalatra" % "scalatra-specs2" % "2.1.0-SNAPSHOT" % "test" changing(),
-   "org.eclipse.jetty" % "jetty-webapp" % "8.1.0.v20120127" % "container",
-   "org.eclipse.jetty" % "jetty-websocket" % "8.1.0.v20120127",
-   "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided",
+   "org.eclipse.jetty" % "jetty-websocket" % "8.1.4.v20120524",
+   "org.eclipse.jetty" % "jetty-webapp" % "8.1.4.v20120524" % "container",
+   "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided,container",
    "net.liftweb" %% "lift-json" % "2.4-M4",
    "net.sf.ehcache" %  "ehcache-core"  % "2.5.1",
-   "org.atmosphere" % "atmosphere-runtime" % "0.9.3",
+   "org.atmosphere" % "atmosphere-runtime" % "0.9.6",
    "org.apache.shiro" % "shiro-core" % "1.2.0",
    "org.apache.shiro" % "shiro-web" % "1.2.0",
    "org.apache.shiro" % "shiro-ehcache" % "1.2.0"
 )
 
-
 ivyXML :=
-<dependency org="org.eclipse.jetty.orbit" name="javax.servlet" rev="3.0.0.v201112011016">
-<artifact name="javax.servlet" type="orbit" ext="jar"/>
-</dependency>
+  <dependencies>
+    <exclude org="org.eclipse.jetty.orbit" />
+  </dependencies>
 
 resolvers ++= Seq("snapshots" at "http://scala-tools.org/repo-snapshots",
                     "releases"  at "http://scala-tools.org/repo-releases",
