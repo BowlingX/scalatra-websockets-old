@@ -33,7 +33,7 @@
 
 2. "long-polling" does nothing
 
-3. "websockets" works on Chrome/Firefox
+3. "websocket" works on Chrome/Firefox
 
 
 ### Problems with Apache-Shiro:
