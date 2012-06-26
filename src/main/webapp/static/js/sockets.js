@@ -2,7 +2,7 @@ $(function(){
 
     var socket = $.atmosphere
     var request = new jQuery.atmosphere.AtmosphereRequest();
-    request.url = "http://localhost:8080/at/status";
+    request.url = "http://" + window.location.host + "/at/status";
     request.contentType = "application/json";
     request.transport = "streaming"
     request.fallbackTransport = "long-polling"
