@@ -27,14 +27,19 @@
 
 4. Login with Username: "david" and Password: "123"
 
+### Problems with New Atomosphere Version (see https://github.com/Atmosphere/atmosphere/issues/436)
 
-5. See that Safari throws Exception with websockets if you send a message
+1. Just see that log shows Exception if you use "streaming" as protocol. (default)
+
+2. "long-polling" does nothing
+
+3. "websockets" works on Chrome/Firefox
 
 
-6. You may change socket.js, line 7 to and safari works:
+### Problems with Apache-Shiro:
 
-         request.transport = "long-polling"
+Change socket.js in /webapp/static/js/socket.js, line 7 to use protocol "websocket"
 
+1. See that Safari throws Exception with websockets if you send a message
 
-7. TODO: Send Messages to different Users
 

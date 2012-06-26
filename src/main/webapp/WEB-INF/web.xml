@@ -31,10 +31,14 @@
         <servlet-name>AtmosphereServlet</servlet-name>
         <servlet-class>org.atmosphere.cpr.MeteorServlet</servlet-class>
         <init-param>
+            <param-name>org.atmosphere.useStream</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
             <param-name>org.atmosphere.servlet</param-name>
             <param-value>com.myself.websockets.CometServlet</param-value>
         </init-param>
-        <load-on-startup>0</load-on-startup>
+        <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>

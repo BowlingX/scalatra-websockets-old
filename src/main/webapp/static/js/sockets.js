@@ -4,7 +4,7 @@ $(function(){
     var request = new jQuery.atmosphere.AtmosphereRequest();
     request.url = "http://localhost:8080/at/status";
     request.contentType = "application/json";
-    request.transport = "websocket"
+    request.transport = "streaming"
     request.fallbackTransport = "long-polling"
     request.onMessage = function(response) {
         var message = response.responseBody;

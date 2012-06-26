@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
    "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided,container",
    "net.liftweb" %% "lift-json" % "2.4-M4",
    "net.sf.ehcache" %  "ehcache-core"  % "2.5.1",
-   "org.atmosphere" % "atmosphere-runtime" % "0.9.6",
+   "org.atmosphere" % "atmosphere-runtime" % "1.0.0-SNAPSHOT",
    "org.apache.shiro" % "shiro-core" % "1.2.0",
    "org.apache.shiro" % "shiro-web" % "1.2.0",
    "org.apache.shiro" % "shiro-ehcache" % "1.2.0"
